@@ -1,4 +1,47 @@
-import 'package:flutter/material.dart' show AlignmentDirectional, AnimatedBuilder, AnimationController, AssetImage, Axis, BorderRadius, BottomNavigationBar, BottomNavigationBarItem, BottomNavigationBarType, BoxDecoration, BuildContext, Builder, CircleAvatar, Color, Colors, Column, Container, CrossAxisAlignment, DecorationImage, EdgeInsets, Expanded, FontWeight, Icon, IconButton, Icons, Image, Key, MainAxisAlignment, MaterialApp, Row, Scaffold, SingleTickerProviderStateMixin, SizedBox, Stack, State, StatefulWidget, StatelessWidget, Text, TextStyle, Transform, Widget, runApp;
+import 'package:flutter/material.dart'
+    show
+        AlignmentDirectional,
+        AnimatedBuilder,
+        AnimationController,
+        AssetImage,
+        Axis,
+        BorderRadius,
+        BottomNavigationBar,
+        BottomNavigationBarItem,
+        BottomNavigationBarType,
+        BoxDecoration,
+        BuildContext,
+        Builder,
+        CircleAvatar,
+        Color,
+        Colors,
+        Column,
+        Container,
+        CrossAxisAlignment,
+        DecorationImage,
+        EdgeInsets,
+        Expanded,
+        FontWeight,
+        Icon,
+        IconButton,
+        Icons,
+        Image,
+        Key,
+        MainAxisAlignment,
+        MaterialApp,
+        Row,
+        Scaffold,
+        SingleTickerProviderStateMixin,
+        SizedBox,
+        Stack,
+        State,
+        StatefulWidget,
+        StatelessWidget,
+        Text,
+        TextStyle,
+        Transform,
+        Widget,
+        runApp;
 import 'package:video_player/video_player.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
@@ -44,22 +87,22 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         items: <BottomNavigationBarItem>[
           const BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            label: 'Home',
+            label: 'Accueil',
           ),
           const BottomNavigationBarItem(
-            icon: Icon(Icons.search),
-            label: 'Search',
+            icon: Icon(MdiIcons.compassOutline),
+            label: 'Decouvrir',
           ),
           BottomNavigationBarItem(
             icon: Image.asset(
               'assets/images/tiktok_add.png',
               height: 25,
             ),
-            label: 'Add',
+            label: '',
           ),
           const BottomNavigationBarItem(
             icon: Icon(Icons.comment_outlined),
-            label: 'Comment',
+            label: 'Boite de reception',
           ),
           const BottomNavigationBarItem(
             icon: Icon(Icons.person_outline),
@@ -71,8 +114,8 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         backgroundColor: const Color(0xFF141518),
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.grey,
-        showSelectedLabels: false,
-        showUnselectedLabels: false,
+        showSelectedLabels: true,
+        showUnselectedLabels: true,
         onTap: _onItemTapped,
       ),
     );
@@ -92,7 +135,7 @@ class HomePage extends StatelessWidget {
       "video": "assets/videos/video_3.mp4",
     },
     {
-      "video": "assets/videos/video_4.mkv",
+      "video": "assets/videos/video_4.mp4",
     },
     {
       "video": "assets/videos/video_5.mp4",
@@ -424,4 +467,3 @@ class _AnimatedLogoState extends State<AnimatedLogo>
     );
   }
 }
-
